@@ -23,3 +23,4 @@ public class ArrayList_hasnext {
 	}
 
 }
+
