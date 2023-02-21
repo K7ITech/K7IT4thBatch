@@ -2,7 +2,7 @@ import org.apache.log4j.Logger;
 
 public class StringEqualsmethod {
 
-	private static final Logger log = Logger.getLogger(StringEqualsmethod.class);
+	private static  Logger log = Logger.getLogger(StringEqualsmethod.class);
 
 	public static void main(String[] args) {
 
@@ -20,12 +20,23 @@ public class StringEqualsmethod {
 		log.fatal(s3 == s5);
 		log.fatal(s3 == s4);
 		log.fatal(s3 == s6);
-
+	
 	}
 
 }
+/*
 
-
+   OUTPUT:
+   ======
+   2023-02-21 17:07:01 FATAL StringEqualsmethod:16 - false
+  2023-02-21 17:07:01 FATAL StringEqualsmethod:17 - false
+  2023-02-21 17:07:01 FATAL StringEqualsmethod:18 - true
+  2023-02-21 17:07:01 FATAL StringEqualsmethod:19 - false
+  2023-02-21 17:07:01 FATAL StringEqualsmethod:20 - false
+  2023-02-21 17:07:01 FATAL StringEqualsmethod:21 - true
+  2023-02-21 17:07:01 FATAL StringEqualsmethod:22 - false
+	
+*/
 
 
 
