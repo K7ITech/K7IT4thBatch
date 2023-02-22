@@ -1,6 +1,6 @@
 import org.apache.log4j.Logger;
 
-public class ElectricBike extends Vehicle {
+public class ElectricBike implements Vehicle {
 	private static final Logger log=Logger.getLogger("ElectricBike");
 
 	@Override
@@ -43,6 +43,12 @@ public class ElectricBike extends Vehicle {
 	public void fixEngine() {
 	
 		log.fatal("Fixing bike Engine");
+	}
+
+	@Override
+	public void fixAdvNumberPlate() {
+		log.info("AP 26 IN 0911");
+		
 	}
 	
 }

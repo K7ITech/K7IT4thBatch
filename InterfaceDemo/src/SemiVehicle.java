@@ -1,57 +1,59 @@
 import org.apache.log4j.Logger;
 
-public class Car implements Vehicle
-{
-private static final Logger log=Logger.getLogger(Car.class);
+public class SemiVehicle implements Vehicle {
 
-
+	private static final Logger log=Logger.getLogger(Vehicle.class);
+	
 	@Override
 	public void fixHandle() {
-	
-		log.debug("Fixing car handle");
+		
+		log.info("fix Handle");
 	}
 
 	@Override
 	public void fixSeats() {
 		
-		log.info("Fixing car seats");
+		log.info("fix Seats");
+		
 	}
 
 	@Override
 	public void fixWheels() {
 		
-		log.fatal("Fixing car wheels");
+		log.info("fix seats");
+		
 	}
 
 	@Override
 	public void fixBody() {
 		
-		log.fatal("Fixing car body");
+		log.info("fix Body");
+		
 	}
 
 	@Override
 	public void fixAccelator() {
 		
-		log.error("Fixing car accelator");
+		log.info("fix Accelator");
 	}
 
 	@Override
 	public void fixBreak() {
-		log.info("Fixing car break" );
+		
+		log.info("Fix break");
 		
 	}
 
 	@Override
 	public void fixEngine() {
-		log.info("Fixing car Engine");
+		
+		log.info("Fix Engine");
 		
 	}
 
 	@Override
 	public void fixAdvNumberPlate() {
-		log.info(null);
+		log.info("Ap 26 AS 2526");
 		
 	}
-	
-
 }

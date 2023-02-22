@@ -1,6 +1,6 @@
 import org.apache.log4j.Logger;
 
-public class Bus extends Vehicle{
+public class Bus implements Vehicle{
 	private static final Logger log=Logger.getLogger("Bus.class");
 
 	@Override
@@ -21,12 +21,7 @@ public class Bus extends Vehicle{
 		log.error("Fixing bus Wheels");
 	}
 
-	@Override
-	public void fixBody() {
-		
-		log.fatal("Fixing bus Body");
-	}
-
+	
 	@Override
 	public void fixAccelator() {
 		
@@ -43,6 +38,18 @@ public class Bus extends Vehicle{
 	public void fixEngine() {
 		
 		log.error("Fixing bus Engine");
+	}
+
+	@Override
+	public void fixAdvNumberPlate() {
+	log.info("AP 24 PG 0910 ");
+		
+	}
+
+	@Override
+	public void fixBody() {
+		
+		log.info("Fixing  bus Body");
 	}
 	
 
