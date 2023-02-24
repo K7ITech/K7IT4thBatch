@@ -1,7 +1,7 @@
 package com.k7it.pack1;
 
 import org.apache.log4j.Logger;
-
+//private access level
 public class A {
 	private static final Logger log=Logger.getLogger(A.class);
 	private int i=30;
