@@ -1,7 +1,7 @@
 package com.k7it.defaultpack2;
 
 import org.apache.log4j.Logger;
-
+// default acess level
 public class C {
 	
 	private static final Logger log=Logger.getLogger(C.class);

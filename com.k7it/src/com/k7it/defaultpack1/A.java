@@ -1,5 +1,5 @@
 package com.k7it.defaultpack1;
-
+//default access level
 import org.apache.log4j.Logger;
 
 public class A {
