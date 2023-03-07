@@ -5,39 +5,11 @@ import org.apache.log4j.Logger;
 public class palindrome 
 {
 	private static Logger log = Logger.getLogger(palindrome .class);
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		
-		/*
-		char ch[];
-		int i,j;
-		int length=0;
-	     boolean flag=true;
-	     Scanner s = new Scanner(System.in);
-		 String inputString=s.next();
-			i=0;
-			while(inputString[i]!='\0') { 
-				
-				length++;
-				i++;
-				}
-			for(i=0,j=(length-1);i<length/2;i++,j--)
-			{
-				if(ch[j]!=ch[i])
-				{
-					flag=false;
-					break;
-				}
-			}
-			if(flag=true)
-			{
-				System.out.println("the given string is palindrome");
-			}
-			else
-			{
-				System.out.println("the given string is not palindrome");
-			}
-		*/
-		Scanner s = new Scanner(System.in);
+		
+		/*Scanner s = new Scanner(System.in);
 		log.info("Enter the string");
 		 String inputString=s.next();
 		 String reverseString="";
@@ -57,7 +29,31 @@ public class palindrome
 			 log.info("Given String is not palindrome");
 		 }
 	}	
-
-	
+*/
+		int r_num=0;
+		Scanner s = new Scanner(System.in);
+		log.info(" Enter num value");
+		int num=s.nextInt();
+		int org_num=num;
+		while(num>0)
+		{
+			r_num=(r_num*10)+(num%10);
+			num=num/10;
+		}
+		log.info(r_num);
+		
+		if(r_num==org_num)
+		{
+			log.info("Given number is a palindrome");
+		}
+		else
+		{
+			log.info("Given number is not  a palindrome");
+		}
+		
+		
+		
+	}
 
 }
+
