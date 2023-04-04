@@ -9,7 +9,7 @@ class Test<T> {
 	public static void main(String[] args) {
 		Test<Integer> t1 = new Test<Integer>();
 		t1.print(20, 30);
-
+		//testing
 		Test<String> t2 = new Test<>();
 		t2.print("Java", "K7iT");
 		
