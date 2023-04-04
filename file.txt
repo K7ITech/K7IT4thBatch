@@ -1,0 +1,15 @@
+package com.k7it;
+
+public class SyncronizationDemo {
+	
+  public static void main(String[] args) {
+	  System.out.println("main start");
+	  PrintingPress pp1 = new PrintingPress();
+	  PrintingPress pp2 = new PrintingPress();
+	  MyPrintingThread t1 = new MyPrintingThread(pp1);
+	  MyPrintingThread t2 = new MyPrintingThread(pp2);
+	  t1.start();
+	  t2.start();
+	  System.out.println("main end");
+  }
+}
