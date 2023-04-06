@@ -20,10 +20,10 @@ public class GivenNumberIsEvenOrNot {
 	}
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
-		log.info(" Enter n value");
+		System.out.println(" Enter n value");
 		int n=s.nextInt();
 		Predicate<Integer>p=(n1)->n%2==0;
-		log.info(n+" is a even number:"+p.test(n));
+		System.out.println(n+" is a even number:"+p.test(n);
 		
 	}
 
