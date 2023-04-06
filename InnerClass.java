@@ -1,11 +1,9 @@
-import org.apache.log4j.Logger;
 
 public class InnerClass {
-	private static Logger log = Logger.getLogger(InnerClass.class);
 	class Person{
 		void m1()
 		{
-			log.debug("Person-m1");
+			System.out.println();("Person-m1");
 		}
 		
 		
@@ -22,7 +20,6 @@ public class InnerClass {
 	
 	public class InnerClassDemo
 	{
-		private Logger log = Logger.getLogger(InnerClassDemo.class);
 		
 	public void main(String[] args)
 	{
@@ -48,7 +45,7 @@ public class InnerClass {
 				{
 					void addBody1()
 					{
-						log.error(" Fixed body for Anonymous car");
+						//log.error(" Fixed body for Anonymous car");
 					}
 					
 				}.addBody1();
@@ -57,8 +54,8 @@ public class InnerClass {
 					int i=0;
 					void m1()
 					{
-						log.error(" Anonymous Inner Class-m1");
-						log.fatal(i);
+						//log.error(" Anonymous Inner Class-m1");
+						//log.fatal(i);
 					}
 						};
 						
@@ -69,7 +66,7 @@ public class InnerClass {
 						{
 							void m1()
 							{
-								log.debug("Anonymous inner design2-m1");
+								//log.debug("Anonymous inner design2-m1");
 							}
 							
 						}.m1();
@@ -77,7 +74,7 @@ public class InnerClass {
 						{
 							void m1()
 							{
-								log.info("Anonymous inner design2-m1");
+								//log.info("Anonymous inner design2-m1");
 							}
 						}.m1();
 							new Person()
