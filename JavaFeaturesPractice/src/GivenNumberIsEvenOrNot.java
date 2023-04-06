@@ -23,7 +23,7 @@ public class GivenNumberIsEvenOrNot {
 		System.out.println(" Enter n value");
 		int n=s.nextInt();
 		Predicate<Integer>p=(n1)->n%2==0;
-		System.out.println(n+" is a even number:"+p.test(n);
+		System.out.println(n+" is a even number:"+p.test(n));
 		
 	}
 
