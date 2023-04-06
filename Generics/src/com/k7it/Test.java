@@ -15,6 +15,7 @@ class Test<T> {
 		
 		Test<Double> t3 = new Test<>();
 		t3.print(10.25, 20.35);
+		//junit testing for test class
 	}
 
 }
